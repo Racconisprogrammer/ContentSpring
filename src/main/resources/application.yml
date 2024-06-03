@@ -1,0 +1,9 @@
+server:
+  port: 8000
+
+app:
+  datasource:
+      jdbc-url: jdbc:postgresql://localhost:5432/amigos
+      username: postgres
+      password: 1122
+      pool-size: 30
