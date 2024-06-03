@@ -7,14 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/students")
 public class StudentsController {
 
     @GetMapping
     public List<Student> getAllStudents() {
-
+        return List.of(new Student(UUID.randomUUID(), "Rashidullo", "Abdullayev", "abdullayev@gmail.com", Student.Gender.MALE));
     }
 
 }
